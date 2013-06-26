@@ -1,0 +1,4 @@
+Actor event.BirthTime:1372264065592699000 Type:bad Side:0
+Key:q Time: 1372264068098441000Left Good
+Actor event.BirthTime:1372264075591130000 Type:bad Side:0
+Key:a Time: 1372264076978102000Left Bad
