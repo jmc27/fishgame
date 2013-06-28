@@ -18,7 +18,7 @@ public class DrawDemo {
 	private GameModel gm;
 	private javax.swing.Timer  timer;
 	public JFrame frame;
-	public JFrame params;
+	public ParamsUI params;
 	public GameView gameboard;
 	private JLabel status;
 	private JSlider speedSlider;
@@ -36,12 +36,11 @@ public class DrawDemo {
 		JButton stopButton;
 		JButton resetButton;
 		
+		
 		this.gm=gamemodel;
 		//this window will have the settings we can adjust
-		params = new JFrame("Settings");
-		params.setSize(500,500);
-		params.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		params.setLayout(new BorderLayout());
+		params = new ParamsUI();
+
 		
 		
 		// first we create the Frame with a border layout
@@ -122,7 +121,7 @@ public class DrawDemo {
 		frame.add(buttonPanel,BorderLayout.EAST);
 		frame.add(status,BorderLayout.SOUTH);
 		//frame.add(speedSlider,BorderLayout.WEST);
-		params.add(speedSlider,BorderLayout.WEST);
+	//	params.add(speedSlider,BorderLayout.WEST);
 		//frame.pack();
 
 	}
